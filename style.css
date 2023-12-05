@@ -1,0 +1,35 @@
+body{
+    background-color: #ecf0f1;
+}
+.loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.element{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 5px solid #000000;
+    background-color: #31b5e9;
+    display: inline-block;
+    margin-left: 25px;
+}
+.element:nth-child(1) {
+    animation: element .6s ease-in-out alternate infinite;
+}
+
+.element:nth-child(2) {
+    animation: element .6s ease-in-out alternate .2s infinite;
+}
+
+.element:nth-child(3) {
+    animation: element .6s ease-in-out alternate .4s infinite;
+}
+
+@keyframes element {
+    100% {
+        transform: scale(2);
+    }
+}
